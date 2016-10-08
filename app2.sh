@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in 1 10 100
+for i in 100
 do
     echo $N
     echo -e -----------------------
