@@ -1,2 +1,0 @@
-Enter Ctrl-c to exit.
-Polling for activation logs

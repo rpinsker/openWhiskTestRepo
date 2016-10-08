@@ -12,7 +12,7 @@ do
         str="hi"
     fi
         echo $str > test.txt
-        git add . > trash.txt
-        git commit -m "Commit #${i}." > trash.txt
-        git push > trash.txt
+        git add . > /dev/null
+        git commit -m "Commit #${i}." > /dev/null
+        git push > /dev/null
 done
