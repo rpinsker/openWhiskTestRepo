@@ -630,3 +630,9 @@ Activation: myGitRule2 (4bcce5f4e9624d6a8dd19ea150b96714)
 
 Activation: myGitTrigger2 (dfa0e6d078b94e149d1f8a1adda86c2b)
 []
+
+Activation: myGitTrigger2 (673845dab9784803a85ee7e2369eb42b)
+[]
+
+Activation: myGitRule2 (a7fd365d92b94a02ba6f389ddb6fc369)
+[]
