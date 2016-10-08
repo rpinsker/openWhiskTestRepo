@@ -7020,3 +7020,39 @@ Activation: post (bae3544eec6945c08e74c275fc3cb2f5)
     "2016-10-08T06:04:10.452484415Z stdout: to: https://hooks.slack.com/services/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",
     "2016-10-08T06:04:10.746297107Z stdout: success:  The file 'pollApp2.500.txt,test.txt' modified by 'Rachel Pinsker' with the message 'Commit #390.'. successfully sent"
 ]
+
+Activation: post (3feae624b882427ebdfa2eee2ac67204)
+[
+    "2016-10-08T06:04:13.903242239Z stdout: { channel: '#general',",
+    "2016-10-08T06:04:13.903280508Z stdout: username: 'rpinsker',",
+    "2016-10-08T06:04:13.903292922Z stdout: text: 'The file \\'test.txt\\' modified by \\'Rachel Pinsker\\' with the message \\'Commit #391.\\'.' }",
+    "2016-10-08T06:04:13.903554943Z stdout: to: https://hooks.slack.com/services/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",
+    "2016-10-08T06:04:14.082546514Z stdout: success:  The file 'test.txt' modified by 'Rachel Pinsker' with the message 'Commit #391.'. successfully sent"
+]
+
+Activation: myGitActionJS (61b7e414894246cbbd882300c81e5785)
+[]
+
+Activation: myGitTrigger2 (4a426d12e3cc4e2c84336a46306f2493)
+[]
+
+Activation: myGitRule2 (bbf7b40da39f41e98c432917e0d90459)
+[]
+
+Activation: post (5f1b63981e174818aa0e4fafbb772090)
+[
+    "2016-10-08T06:04:15.973194523Z stdout: { channel: '#general',",
+    "2016-10-08T06:04:15.973232392Z stdout: username: 'rpinsker',",
+    "2016-10-08T06:04:15.973244324Z stdout: text: 'The file \\'pollApp2.500.txt,test.txt\\' modified by \\'Rachel Pinsker\\' with the message \\'Commit #392.\\'.' }",
+    "2016-10-08T06:04:15.973489033Z stdout: to: https://hooks.slack.com/services/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",
+    "2016-10-08T06:04:16.136446502Z stdout: success:  The file 'pollApp2.500.txt,test.txt' modified by 'Rachel Pinsker' with the message 'Commit #392.'. successfully sent"
+]
+
+Activation: myGitActionJS (af91fe8a34e94dd2aa83aab86f6e990f)
+[]
+
+Activation: myGitRule2 (8ef0b4af832947e7a7e5bdfe0c6c4459)
+[]
+
+Activation: myGitTrigger2 (5ece8fd5a5a14935941c565f1c63e075)
+[]
