@@ -91,7 +91,7 @@ for line in file:
 for f in functionNames:
     row = []
     print "\n-----------\n" + f + "\n-----------"
-    if f == UPLOAD_N_DOCS or f == DOC_UPLOADED or f == DOC_UPLOADED_WITHOUT_UPDATES:
+    if #f == UPLOAD_N_DOCS or f == DOC_UPLOADED or f == DOC_UPLOADED_WITHOUT_UPDATES:
         # TODO: cost
         avgTime = float(runtimes[f]) / float(invocations[f])
         row = [invocations[f],0,runtimes[f],avgTime]
