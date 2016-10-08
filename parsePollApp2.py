@@ -9,6 +9,8 @@ DB_CHANGE_RULE = "fileUploadedRuleLimit"
 DB_CHANGE_TRIGGER = "cloudantChangeLimit"
 DOC_UPLOADED = "docUploaded"
 
+
+
 # this is for analyzing if a trigger/rule could be created to only track file uploads. It is not an actual OpenWhisk function. The idea was to have a trigger fire every time a document was updated. Then docUploaded would be invoked every time the output file was updated but docUploaded would immediately exit. This would allow for comparison of having a "null" function being invoked as many times as a regular function was being invoked. Because OpenWhisk couldn't scale, this test ended up not making sense.
 DOC_UPLOADED_WITHOUT_UPDATES = "docUploadedWithoutDocUpdates"
 
