@@ -175,8 +175,8 @@ Activation: myGitTrigger2 (57d282e82f904217bd8e701a2a1594e2)
 
 Activation: myGitRule2 (8ef123cc5c0345398056ba5a41b9f86b)
 []
-
-Activation: post (4063e16066f449c1a7586976fdac3bf4)
+Poll terminated
+t (4063e16066f449c1a7586976fdac3bf4)
 [
     "2016-10-08T06:35:48.806533926Z stdout: { channel: '#general',",
     "2016-10-08T06:35:48.806567638Z stdout: username: 'rpinsker',",
