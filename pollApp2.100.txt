@@ -1,2 +1,20 @@
 Enter Ctrl-c to exit.
 Polling for activation logs
+
+Activation: post (9ef78649c3e74eb096aaa49bf2d5a16a)
+[
+    "2016-10-08T05:12:03.110105398Z stdout: { channel: '#general',",
+    "2016-10-08T05:12:03.110136172Z stdout: username: 'rpinsker',",
+    "2016-10-08T05:12:03.110148254Z stdout: text: 'The file \\'pollApp2.10.txt,test.txt\\' modified by \\'Rachel Pinsker\\' with the message \\'Commit #1.\\'.' }",
+    "2016-10-08T05:12:03.110451336Z stdout: to: https://hooks.slack.com/services/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",
+    "2016-10-08T05:12:03.298750072Z stdout: success:  The file 'pollApp2.10.txt,test.txt' modified by 'Rachel Pinsker' with the message 'Commit #1.'. successfully sent"
+]
+
+Activation: myGitActionJS (a7c01392bc6a4f7e9acc7ae9af3da9c7)
+[]
+
+Activation: myGitRule2 (a326b571f86c4172a4140d534bdfb17e)
+[]
+
+Activation: myGitTrigger2 (1be9aff699a14b17828a4105ae0d4ce1)
+[]
