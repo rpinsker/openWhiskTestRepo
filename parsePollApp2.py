@@ -67,7 +67,7 @@ for line in file:
             if overallStart > startTime or overallStart == 0:
                 overallStart = startTime
             
-            if UPLOAD_N_DOCS == parts[1]:
+            if POST == parts[1]:
                 runtimes[UPLOAD_N_DOCS] += timeSpentRunning(startTime,endTime)
                 if overallEnd < endTime:
                     overallEnd = endTime
