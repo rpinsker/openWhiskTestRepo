@@ -1,2 +1,8 @@
 Enter Ctrl-c to exit.
 Polling for activation logs
+
+Activation: myGitTrigger2 (152dacca744846358a2e4f7b84effbd8)
+[]
+
+Activation: myGitRule2 (2972579d52294a83a242fa10335c11f5)
+[]
