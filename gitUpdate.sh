@@ -1,7 +1,7 @@
 #!/bin/bash
 
-
-for i in `seq 1 $@`
+N=$(($@))
+for i in `seq 1 ${N}`
 do
     if (($i%2 == 0));
     then
