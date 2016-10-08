@@ -3,7 +3,7 @@
 for i in 2
 do
     wsk activation poll > "pollApp2.${i}.txt" & pid=$!
-    time bash gitUpdate.sh $2
+    time bash gitUpdate.sh $i
     sleep 20
     kill $pid
     echo "starting python script..."
