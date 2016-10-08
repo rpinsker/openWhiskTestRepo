@@ -14,5 +14,5 @@ do
         echo $str > test.txt
         git add . > /dev/null
         git commit -m "Commit #${i}." > /dev/null
-        git push > /dev/null
+        git push > /dev/null 2>&1
 done
