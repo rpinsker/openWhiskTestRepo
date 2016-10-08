@@ -486,3 +486,39 @@ Activation: myGitTrigger2 (d7c70efd3b404ba9912b2de5c86d59c3)
 
 Activation: myGitRule2 (6c44402f7b4744fe987a5757a1db2c8f)
 []
+
+Activation: post (ab2ef27144c14be49a2482dd80963c89)
+[
+    "2016-10-08T05:17:03.752871275Z stdout: { channel: '#general',",
+    "2016-10-08T05:17:03.752900649Z stdout: username: 'rpinsker',",
+    "2016-10-08T05:17:03.752912416Z stdout: text: 'The file \\'pollApp2.100.txt,test.txt\\' modified by \\'Rachel Pinsker\\' with the message \\'Commit #28.\\'.' }",
+    "2016-10-08T05:17:03.753231477Z stdout: to: https://hooks.slack.com/services/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",
+    "2016-10-08T05:17:03.919166405Z stdout: success:  The file 'pollApp2.100.txt,test.txt' modified by 'Rachel Pinsker' with the message 'Commit #28.'. successfully sent"
+]
+
+Activation: myGitActionJS (a7fe1cec48d8420fbc4e343929477de9)
+[]
+
+Activation: myGitTrigger2 (908ace463c2a499aab3550c09baffd4c)
+[]
+
+Activation: myGitRule2 (55e9d33c081f466aa3074e19b5081933)
+[]
+
+Activation: post (ae257133d6e2419a86d0eb914593ee9c)
+[
+    "2016-10-08T05:17:06.267420673Z stdout: { channel: '#general',",
+    "2016-10-08T05:17:06.267454018Z stdout: username: 'rpinsker',",
+    "2016-10-08T05:17:06.267466422Z stdout: text: 'The file \\'pollApp2.100.txt,test.txt\\' modified by \\'Rachel Pinsker\\' with the message \\'Commit #29.\\'.' }",
+    "2016-10-08T05:17:06.267788503Z stdout: to: https://hooks.slack.com/services/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",
+    "2016-10-08T05:17:06.462167562Z stdout: success:  The file 'pollApp2.100.txt,test.txt' modified by 'Rachel Pinsker' with the message 'Commit #29.'. successfully sent"
+]
+
+Activation: myGitActionJS (fecf8db8fad64f04bf0c9f0231457e2f)
+[]
+
+Activation: myGitTrigger2 (1c98877a4cef42938b502b3d1ea05360)
+[]
+
+Activation: myGitRule2 (f287a033f5b54886957cc9e1196ebeb7)
+[]
