@@ -69,11 +69,11 @@ for line in file:
             
             if POST == parts[1] or GIT == parts[1]:
                 runtimes[parts[1]] += timeSpentRunning(startTime,endTime)
-                if overallEnd < endTime:
-                    overallEnd = endTime
-                if overallStart > startTime or overallStart == 0:
-                    overallStart = startTime
-        
+#                if overallEnd < endTime:
+#                    overallEnd = endTime
+#                if overallStart > startTime or overallStart == 0:
+#                    overallStart = startTime
+
 #            elif DOC_UPLOADED == parts[1]:
 #                timeSpent = timeSpentRunning(startTime,endTime)
 #                runtimes[DOC_UPLOADED] += timeSpent
