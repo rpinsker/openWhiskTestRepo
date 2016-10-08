@@ -11,7 +11,7 @@ do
     sleep 20
     kill $pid
     echo "starting python script..."
-    python parsePoll.py "pollApp2${i}.txt"
+    python ../parsePoll.py "pollApp2${i}.txt"
 done
 
 exit 0;
