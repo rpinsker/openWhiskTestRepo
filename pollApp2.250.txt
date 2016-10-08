@@ -2214,3 +2214,4 @@ Activation: myGitTrigger2 (03808dd391e24b17a4cba53f54848169)
 
 Activation: myGitRule2 (b1fd452372374fa1a5999b46f44fccd2)
 []
+Poll terminated
