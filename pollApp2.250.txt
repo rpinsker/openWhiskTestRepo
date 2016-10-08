@@ -1224,3 +1224,9 @@ Activation: post (689d502950e9434baefefad75e21e370)
 
 Activation: myGitActionJS (ddeeef408f124660b97162a0c05fa89c)
 []
+
+Activation: myGitTrigger2 (4dc9200f4e3b4b21864f29774cb8dcaa)
+[]
+
+Activation: myGitRule2 (cd072ccc08184c94b2da29059b56606c)
+[]
