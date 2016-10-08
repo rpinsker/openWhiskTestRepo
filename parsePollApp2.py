@@ -17,14 +17,14 @@ GIT_RULE = "myGitRule2"
 # this is for analyzing if a trigger/rule could be created to only track file uploads. It is not an actual OpenWhisk function. The idea was to have a trigger fire every time a document was updated. Then docUploaded would be invoked every time the output file was updated but docUploaded would immediately exit. This would allow for comparison of having a "null" function being invoked as many times as a regular function was being invoked. Because OpenWhisk couldn't scale, this test ended up not making sense.
 DOC_UPLOADED_WITHOUT_UPDATES = "docUploadedWithoutDocUpdates"
 
-functionNames = [DB_CHANGE_RULE, DB_CHANGE_TRIGGER, DOC_UPLOADED, DOC_UPLOADED_WITHOUT_UPDATES]
+functionNames = [POST,GIT,GIT_TRIGGER,GIT_RULE]#[DB_CHANGE_RULE, DB_CHANGE_TRIGGER, DOC_UPLOADED, DOC_UPLOADED_WITHOUT_UPDATES]
 
 # initialize dictionaries
 invocations = {} # key = function; value = # of times invoked
 runtimes = {} # key = function; value = ms spent running
 for f in functionNames:
     invocations[f] = 0
-    if f == UPLOAD_N_DOCS or f == DOC_UPLOADED or f == DOC_UPLOADED_WITHOUT_UPDATES:
+    if f == POST or f == GIT: #f == UPLOAD_N_DOCS or f == DOC_UPLOADED or f == DOC_UPLOADED_WITHOUT_UPDATES:
         runtimes[f] = 0
 
 file = open(sys.argv[1],'r')
@@ -67,31 +67,31 @@ for line in file:
             if overallStart > startTime or overallStart == 0:
                 overallStart = startTime
             
-            if POST == parts[1]:
-                runtimes[UPLOAD_N_DOCS] += timeSpentRunning(startTime,endTime)
+            if POST == parts[1] or GIT == parts[1]:
+                runtimes[parts[1]] += timeSpentRunning(startTime,endTime)
                 if overallEnd < endTime:
                     overallEnd = endTime
                 if overallStart > startTime or overallStart == 0:
                     overallStart = startTime
         
-            elif DOC_UPLOADED == parts[1]:
-                timeSpent = timeSpentRunning(startTime,endTime)
-                runtimes[DOC_UPLOADED] += timeSpent
-                
-                # check if it's an upload
-                result = responseJSON["response"]["result"]
-                if "stats" in result.keys():
-                    invocations[DOC_UPLOADED_WITHOUT_UPDATES] += 1
-                    runtimes[DOC_UPLOADED_WITHOUT_UPDATES] += timeSpent
-                    
-                    statsJSON = json.loads(result["stats"])
-                    lines += int(statsJSON["lines"])
-                    chars += int(statsJSON["chars"])
+#            elif DOC_UPLOADED == parts[1]:
+#                timeSpent = timeSpentRunning(startTime,endTime)
+#                runtimes[DOC_UPLOADED] += timeSpent
+#                
+#                # check if it's an upload
+#                result = responseJSON["response"]["result"]
+#                if "stats" in result.keys():
+#                    invocations[DOC_UPLOADED_WITHOUT_UPDATES] += 1
+#                    runtimes[DOC_UPLOADED_WITHOUT_UPDATES] += timeSpent
+#                    
+#                    statsJSON = json.loads(result["stats"])
+#                    lines += int(statsJSON["lines"])
+#                    chars += int(statsJSON["chars"])
 
 for f in functionNames:
     row = []
     print "\n-----------\n" + f + "\n-----------"
-    if f == POST or f == GIT #f == UPLOAD_N_DOCS or f == DOC_UPLOADED or f == DOC_UPLOADED_WITHOUT_UPDATES:
+    if f == POST or f == GIT: #f == UPLOAD_N_DOCS or f == DOC_UPLOADED or f == DOC_UPLOADED_WITHOUT_UPDATES:
         # TODO: cost
         avgTime = float(runtimes[f]) / float(invocations[f])
         row = [invocations[f],0,runtimes[f],avgTime]
