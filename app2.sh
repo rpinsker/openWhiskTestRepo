@@ -1,7 +1,11 @@
 #!/bin/bash
 
-for i in 2
+for i in 1 10 500
 do
+    echo $N
+    echo -e -----------------------
+    echo -e "          ${i}           "
+    echo -e -----------------------
     wsk activation poll > "pollApp2.${i}.txt" & pid=$!
     time bash gitUpdate.sh $i
     sleep 20

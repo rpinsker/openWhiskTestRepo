@@ -1,2 +1,39 @@
 Enter Ctrl-c to exit.
 Polling for activation logs
+
+Activation: post (132736c494a5444ba648f0b933e86719)
+[
+    "2016-10-08T05:06:21.534247091Z stdout: { channel: '#general',",
+    "2016-10-08T05:06:21.534296274Z stdout: username: 'rpinsker',",
+    "2016-10-08T05:06:21.534314184Z stdout: text: 'The file \\'app2.sh,pollApp2.2.txt,test.txt\\' modified by \\'Rachel Pinsker\\' with the message \\'Commit #1.\\'.' }",
+    "2016-10-08T05:06:21.534549462Z stdout: to: https://hooks.slack.com/services/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",
+    "2016-10-08T05:06:21.827404938Z stdout: success:  The file 'app2.sh,pollApp2.2.txt,test.txt' modified by 'Rachel Pinsker' with the message 'Commit #1.'. successfully sent"
+]
+
+Activation: myGitActionJS (95a06916a4f443f694063542e40f152d)
+[]
+
+Activation: myGitRule2 (4539da47036448d7a1d2d73672916798)
+[]
+
+Activation: myGitTrigger2 (c55db648afc440f6acd8e0ce3cbf86af)
+[]
+
+Activation: post (d7e60633ca5e47488ddb7dd11345ba29)
+[
+    "2016-10-08T05:06:25.657767733Z stdout: { channel: '#general',",
+    "2016-10-08T05:06:25.65779592Z  stdout: username: 'rpinsker',",
+    "2016-10-08T05:06:25.657808354Z stdout: text: 'The file \\'pollApp2.2.txt,test.txt\\' modified by \\'Rachel Pinsker\\' with the message \\'Commit #2.\\'.' }",
+    "2016-10-08T05:06:25.658150315Z stdout: to: https://hooks.slack.com/services/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",
+    "2016-10-08T05:06:25.892848559Z stdout: success:  The file 'pollApp2.2.txt,test.txt' modified by 'Rachel Pinsker' with the message 'Commit #2.'. successfully sent"
+]
+
+Activation: myGitActionJS (044db47ce1d244eb8f5f3f9bf8fed86e)
+[]
+
+Activation: myGitTrigger2 (9498d62768ff444d939142d38319aed1)
+[]
+
+Activation: myGitRule2 (d9d3931c3bb74c3e8909bb5d5175af2b)
+[]
+Poll terminated
