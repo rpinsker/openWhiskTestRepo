@@ -15,5 +15,4 @@ do
         git add .
         git commit -m "Commit #${i}."
         git push
-    done
 done
