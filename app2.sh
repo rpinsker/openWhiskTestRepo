@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in 25
+for i in 300
 do
     echo $N
     echo -e -----------------------
