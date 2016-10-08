@@ -1872,3 +1872,21 @@ Activation: myGitTrigger2 (630ca12675f44cef9089a78743cd31c0)
 
 Activation: myGitRule2 (5fd9cbb159184c9aa030012426d85181)
 []
+
+Activation: post (7022736826f74cbcb0f6687093b75c94)
+[
+    "2016-10-08T05:31:34.140673835Z stdout: { channel: '#general',",
+    "2016-10-08T05:31:34.140704935Z stdout: username: 'rpinsker',",
+    "2016-10-08T05:31:34.140716563Z stdout: text: 'The file \\'pollApp2.500.txt,test.txt\\' modified by \\'Rachel Pinsker\\' with the message \\'Commit #105.\\'.' }",
+    "2016-10-08T05:31:34.141031079Z stdout: to: https://hooks.slack.com/services/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",
+    "2016-10-08T05:31:34.321777123Z stdout: success:  The file 'pollApp2.500.txt,test.txt' modified by 'Rachel Pinsker' with the message 'Commit #105.'. successfully sent"
+]
+
+Activation: myGitActionJS (8a3176fd4b0c40efbec2061ae3e48d1c)
+[]
+
+Activation: myGitTrigger2 (de0567b46eb84857ae453a1f9e763aa7)
+[]
+
+Activation: myGitRule2 (dbe0b538c07244d4b7294ef387ff30a2)
+[]
