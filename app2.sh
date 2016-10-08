@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in 1 10 500
+for i in 1 10 100
 do
     echo $N
     echo -e -----------------------
@@ -8,7 +8,7 @@ do
     echo -e -----------------------
     wsk activation poll > "pollApp2.${i}.txt" & pid=$!
     time bash gitUpdate.sh $i
-    sleep 20
+    sleep 10
     kill $pid
     echo "starting python script..."
     python ../parsePoll.py "pollApp2${i}.txt"
