@@ -3,7 +3,7 @@
 
 for i in {1..4}
 do
-    if (($i%2=0));
+    if (($i%2 = 0));
     then
         echo "here"
         str="hello"
